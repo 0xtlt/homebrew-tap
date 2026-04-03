@@ -17,6 +17,10 @@ cask "vitrail" do
 
   app "Vitrail.app"
 
+  postflight do
+    system "open", "#{appdir}/Vitrail.app"
+  end
+
   zap trash: [
     "~/.config/vitrail",
   ]
