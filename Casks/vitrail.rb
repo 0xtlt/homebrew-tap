@@ -18,10 +18,11 @@ cask "vitrail" do
   app "Vitrail.app"
 
   preflight do
-    system_command "/usr/bin/pgrep", args: ["-xq", "Vitrail"],
-                   print_stderr: false, must_succeed: false
-    if $CHILD_STATUS.success?
+    was_running = system("/usr/bin/pgrep", "-xq", "Vitrail")
+    if was_running
       File.write("/tmp/vitrail-was-running", "1")
+      system("/usr/bin/pkill", "-x", "Vitrail")
+      sleep 1
     else
       File.delete("/tmp/vitrail-was-running") if File.exist?("/tmp/vitrail-was-running")
     end
