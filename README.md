@@ -6,11 +6,11 @@ Custom Homebrew tap for 0xtlt projects.
 
 ```bash
 brew tap 0xtlt/tap
-brew install tiler
+brew install vitrail
 ```
 
 ## Available Casks
 
 | Cask | Description |
 |------|-------------|
-| `tiler` | Lightweight macOS window layout manager |
+| `vitrail` | Lightweight macOS window layout manager |
