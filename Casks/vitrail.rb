@@ -17,8 +17,21 @@ cask "vitrail" do
 
   app "Vitrail.app"
 
+  preflight do
+    system_command "/usr/bin/pgrep", args: ["-xq", "Vitrail"],
+                   print_stderr: false, must_succeed: false
+    if $CHILD_STATUS.success?
+      File.write("/tmp/vitrail-was-running", "1")
+    else
+      File.delete("/tmp/vitrail-was-running") if File.exist?("/tmp/vitrail-was-running")
+    end
+  end
+
   postflight do
-    system "open", "#{appdir}/Vitrail.app"
+    if File.exist?("/tmp/vitrail-was-running")
+      File.delete("/tmp/vitrail-was-running")
+      system "open", "#{appdir}/Vitrail.app"
+    end
   end
 
   zap trash: [
