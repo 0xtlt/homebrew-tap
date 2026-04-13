@@ -1,14 +1,14 @@
 cask "vitrail" do
-  version "2.2.2"
+  version "2.2.3"
 
   on_arm do
     url "https://github.com/0xtlt/vitrail/releases/download/v#{version}/Vitrail-arm64.dmg"
-    sha256 "fd9e9bdce0cbc2999b2d0c1e431da15ca4a4211c36207ea2ecca97c77fac4856"
+    sha256 "fea045f17bc7c818327aef1f0517c514a653b3d401a0930aea1f6ac4fd39fe1d"
   end
 
   on_intel do
     url "https://github.com/0xtlt/vitrail/releases/download/v#{version}/Vitrail-x86_64.dmg"
-    sha256 "942f954a9b670684d593ea3b125debd940d9355394c010a4727b24d8207bf72d"
+    sha256 "09cd81c8954b4b1413ac65d66c440463b742cfc80a6b6212061e8ea259c629b4"
   end
 
   name "Vitrail"
