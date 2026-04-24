@@ -22,13 +22,13 @@ cask "foldbar" do
       system("/usr/bin/pkill", "-x", "foldbar")
       sleep 1
     else
-      FileUtils.rm_f("/tmp/foldbar-was-running")
+      FileUtils.rm("/tmp/foldbar-was-running", force: true)
     end
   end
 
   postflight do
     if File.exist?("/tmp/foldbar-was-running")
-      FileUtils.rm_f("/tmp/foldbar-was-running")
+      FileUtils.rm("/tmp/foldbar-was-running", force: true)
       system "open", "#{appdir}/Foldbar.app"
     end
   end
