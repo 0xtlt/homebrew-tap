@@ -1,12 +1,11 @@
 cask "foldbar" do
   arch arm: "arm64", intel: "x86_64"
 
-  version "0.1.0"
-  sha256 arm:   "ec6f149a11aeb7a21315e1bf10a86d137bb74798d2f8d5be0a332091e8a103e4",
-         intel: "c21ecb1cdaa3e8522d0a47061c8cb8b1f51bc8169ac26a833a80340c98a26a3d"
+  version "0.1.1"
+  sha256 arm:   "48bb295aba340e4b977bc70f61949dabc0c18c4903f4eaae4db63b24c4b91e4b",
+         intel: "66fe97b0d17d2cd6059a98411e50c0b541a98ea4a00759f4fe65628e0c3a7936"
 
-  url "https://github.com/0xtlt/foldbar/releases/download/v#{version}/foldbar-#{arch}.dmg",
-      verified: "github.com/0xtlt/foldbar/"
+  url "https://github.com/0xtlt/foldbar/releases/download/v#{version}/foldbar-#{arch}.dmg"
   name "Foldbar"
   desc "Menu bar utility to fold away menu bar icons"
   homepage "https://github.com/0xtlt/foldbar"
