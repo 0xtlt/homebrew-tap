@@ -1,9 +1,9 @@
 cask "foldbar" do
   arch arm: "arm64", intel: "x86_64"
 
-  version "0.1.1"
-  sha256 arm:   "48bb295aba340e4b977bc70f61949dabc0c18c4903f4eaae4db63b24c4b91e4b",
-         intel: "66fe97b0d17d2cd6059a98411e50c0b541a98ea4a00759f4fe65628e0c3a7936"
+  version "0.1.2"
+  sha256 arm:   "2cf1725f33539a8fa91c458ea2a0635ac23b7a2c69b68d5cbffaece0dc2cedd3",
+         intel: "d79e524d8534e92295a0fc0f21ec86aa5cd1f03bf72ee8150ee738d889f51db4"
 
   url "https://github.com/0xtlt/foldbar/releases/download/v#{version}/foldbar-#{arch}.dmg"
   name "Foldbar"
