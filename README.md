@@ -8,6 +8,7 @@ Custom Homebrew tap for 0xtlt projects.
 brew tap 0xtlt/tap
 brew install vitrail
 brew install foldbar
+brew install mactmux
 ```
 
 ## Available Casks
@@ -15,4 +16,5 @@ brew install foldbar
 | Cask | Description |
 |------|-------------|
 | `foldbar` | Tiny macOS menu bar utility to fold away menu bar icons |
+| `mactmux` | Menu bar utility for tmux sessions |
 | `vitrail` | Lightweight macOS window layout manager |
