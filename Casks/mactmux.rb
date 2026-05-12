@@ -1,9 +1,9 @@
 cask "mactmux" do
   arch arm: "arm64", intel: "x86_64"
 
-  version "0.1.0-beta.1"
-  sha256 arm:   "66a96a6cfaca0edd92724f64239275afd2e1c4b8587d6442656632821e7a93e4",
-         intel: "38f096ef086211e11dc2d9487b20a78cb1ba0922fa8dc5bd0e7f0bc78ce28777"
+  version "0.1.0-beta.2"
+  sha256 arm:   "aa868e6677cca1953724454c3f8d5a42787c75f205d12428ee3c5404af9f9786",
+         intel: "972a6e3f90b0c69be314d6f40c0c8bb2a3bc4c0688ea9e4c643b23e6615a2b00"
 
   url "https://github.com/0xtlt/MacTMUX/releases/download/v#{version}/mactmux-#{arch}.dmg"
   name "MacTMUX"
@@ -32,5 +32,8 @@ cask "mactmux" do
     end
   end
 
-  zap trash: "~/Library/Preferences/com.0xtlt.mactmux.plist"
+  zap trash: [
+    "~/Library/LaunchAgents/com.0xtlt.mactmux.loginitem.plist",
+    "~/Library/Preferences/com.0xtlt.mactmux.plist",
+  ]
 end
