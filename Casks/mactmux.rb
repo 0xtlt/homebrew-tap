@@ -1,9 +1,9 @@
 cask "mactmux" do
   arch arm: "arm64", intel: "x86_64"
 
-  version "0.1.0-beta.8"
-  sha256 arm:   "172519da172ca13d0ba80b7826e9addac3c70bd484f7ce3226852a5d5a72af6a",
-         intel: "86bb6a8db8b112c2b4bceb3e48852e213e9b6d7b80fc13a5740c7632467e452b"
+  version "0.1.0-beta.9"
+  sha256 arm:   "72425e6765991bbe2bc07b3ad744c7028682909eff2a4685a3abc2725ef251da",
+         intel: "dca440aab0f53f4f2a0f8ff19e04be941a5956d3900df77b732518736b1f7ea9"
 
   url "https://github.com/0xtlt/MacTMUX/releases/download/v#{version}/mactmux-#{arch}.dmg"
   name "MacTMUX"
