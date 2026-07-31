@@ -1,24 +1,24 @@
 class Md2pdf < Formula
   desc "Fast, standalone Markdown to PDF converter written in Rust"
   homepage "https://github.com/0xtlt/md2pdf"
-  version "3.2.2"
+  version "3.3.0"
   license "MIT"
 
   on_macos do
     on_arm do
       url "https://github.com/0xtlt/md2pdf/releases/download/v#{version}/md2pdf-macos-arm64.tar.gz"
-      sha256 "cb6a4c7c1ae392c97309685612539e7141dc841f66c362e38b17aef14775f0c2"
+      sha256 "0f35079e869c60b1ba58ee1ddbce92ac3e5227f44f47b1dd900741ab2aec8887"
     end
     on_intel do
       url "https://github.com/0xtlt/md2pdf/releases/download/v#{version}/md2pdf-macos-x86_64.tar.gz"
-      sha256 "bfc7081e6c760d9319b05946138e320a11b26edd34724483e5e00fea19f28284"
+      sha256 "b4728bc501f2fa4149aeb109712e1e1c6e5c84b429970dd924104bb86f58264e"
     end
   end
 
   on_linux do
     on_intel do
       url "https://github.com/0xtlt/md2pdf/releases/download/v#{version}/md2pdf-linux-x86_64.tar.gz"
-      sha256 "4d576aa4bec58fd6b0f48e8412ff4991ad06873f8e07b12a9fd4a995ea39c99f"
+      sha256 "75d26bbb342912a74a4df4dbf16b7305932db153f24737a6f97f5006c41f9561"
     end
   end
 
