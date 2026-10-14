@@ -10,6 +10,7 @@ brew install 0xtlt/tap/md2pdf
 brew install vitrail
 brew install foldbar
 brew install mactmux
+brew install opensheet
 ```
 
 ## Available Formulae
@@ -24,4 +25,5 @@ brew install mactmux
 |------|-------------|
 | `foldbar` | Tiny macOS menu bar utility to fold away menu bar icons |
 | `mactmux` | Menu bar utility for tmux sessions |
+| `opensheet` | Open-source spreadsheet with the interface of Excel |
 | `vitrail` | Lightweight macOS window layout manager |
