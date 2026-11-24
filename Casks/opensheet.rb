@@ -1,9 +1,9 @@
 cask "opensheet" do
   arch arm: "aarch64", intel: "x86_64"
 
-  version "0.2.3"
-  sha256 arm:   "98c6f522dd0f7d09f5969e98009306b39a7ccc7dd57e1f24fb9099b29a1121c6",
-         intel: "ba0681833357dac581bca33c26bdbeab72e60bd419a8475babbed33ed7feba18"
+  version "0.3.0"
+  sha256 arm:   "bbbaf1f51e38f39273fd986f01ae95b1a98f0f945e9d7445892d862e41737447",
+         intel: "846caa0b7c0d91d9dbf5f65ffec14086d1ce98583410547e709a3f87f993e362"
 
   url "https://github.com/0xtlt/opensheet/releases/download/v#{version}/opensheet-#{arch}-apple-darwin.dmg"
   name "OpenSheet"
