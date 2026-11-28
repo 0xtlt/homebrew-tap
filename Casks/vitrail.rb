@@ -1,19 +1,21 @@
 cask "vitrail" do
-  version "2.3.1"
+  version "3.0.0"
 
   on_arm do
     url "https://github.com/0xtlt/vitrail/releases/download/v#{version}/Vitrail-arm64.dmg"
-    sha256 "0ebe5153350870564e40e97d0f9831932b491bb1b01a39395c335b2851b15f97"
+    sha256 "3aae8f8d44ca339fe66018e6bec50961afe4baa9dd3e020fd22d766e1afefe61"
   end
 
   on_intel do
     url "https://github.com/0xtlt/vitrail/releases/download/v#{version}/Vitrail-x86_64.dmg"
-    sha256 "457b1634cf04c3cb94a2c814d703af025352e3ef5727372b5965baa81ebd956c"
+    sha256 "eb349fdeb0eab5187223ae0dd5be2983bf41f5482e3ee8e72a2dbfc8f2c1a195"
   end
 
   name "Vitrail"
   desc "Lightweight macOS window layout manager with TOML config and global hotkeys"
   homepage "https://github.com/0xtlt/vitrail"
+
+  depends_on macos: ">= :sonoma"
 
   app "Vitrail.app"
 
@@ -39,3 +41,4 @@ cask "vitrail" do
     "~/.config/vitrail",
   ]
 end
+
